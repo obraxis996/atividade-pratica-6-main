@@ -1,0 +1,61 @@
+/* =========================================
+   ESTILOS GERAIS
+========================================= */
+body {
+    min-height: 100vh;
+}
+
+/* =========================================
+   PÁGINAS DE LOGIN E CADASTRO
+========================================= */
+/* Centraliza horizontalmente e dá um respiro no topo */
+.login-box, 
+.cadastro-box {
+    max-width: 400px;
+    width: 100%;
+    margin: 10vh auto; /* Centraliza no meio da tela sem quebrar outras páginas */
+}
+
+/* =========================================
+   PÁGINA DO FEED
+========================================= */
+/* Ajuste do layout interno dos posts */
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+}
+
+/* Deixa as fotos de perfil redondas */
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Área de Curtir e Comentar */
+.post-actions {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.post-actions span:hover {
+    opacity: 0.7;
+}
+
+/* Alinhamento do botão de Publicar */
+.btn-publicar {
+    width: auto;
+    float: right;
+    margin-top: 1rem;
+}
+
+/* Evita que o botão "flutuante" quebre o layout da caixa */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
